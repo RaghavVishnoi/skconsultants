@@ -1,0 +1,162 @@
+<body id="top" class="ndhome">
+
+	<%render partial: 'common/loader' %>
+
+	<!-- Header Section Start -->
+	<%=render partial: 'common/header'%>
+
+
+<!-- Nadea PageTitle Section Start -->
+		<section id="page-title" class="clear skype-bg" style="margin-top:4.5%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="page-title">
+							<h1>Contact</h1>
+						</div>
+					</div><!-- col 6-->
+				</div><!-- .row end -->
+			</div><!-- .container end -->
+		</section>
+		<!-- Nadea PageTitle Section End -->
+		
+		<section id="contactaddress">	
+			 
+			
+			<div class="container">
+				<div class="row">
+					 <!-- Reviews Section -->
+					<div class="col-sm-12">
+						<div class="col-sm-6">
+							<div class="item">
+								 
+								<div class="contact-info">
+									<h4>Regd. Office</h4>
+									<div>
+ 									<p>Model Town, </p>	
+									<p>Sector-11,Faridabad,</p>
+									<p>Haryana-121006, India.</p>
+									<p><b>Email at:</b> info@skconsultants.in</p>
+									<p><b>Mobile:</b>9711063143</p>
+									</div>
+ 								</div>
+							</div>							
+						</div><!-- /#owl-reviews -->
+						<div class="col-sm-6">
+							<div class="item">
+								 
+								<div class="contact-info">
+									<h4>Corporate Office(India)</h4>
+									<div>
+ 									<p>50B  3rd and 4th Floor, </p>	
+									<p>Bharat Nagar, New Friends Colony,</p>
+									<p>New Delhi-110025, India.</p>
+									<p><b>Email at:</b> info@skconsultants.in</p>
+									<p><b>Mobile:</b>9711063143</p>
+									</div>
+ 								</div>
+							</div>							
+						</div><!-- /#owl-reviews --> 
+						  
+					   
+					</div><!-- /.col-lg-12 -->  	    
+					<!-- /#reviews --> 
+				</div>
+			</div>
+		</section>
+		
+		<section class="ndcontactfm">
+			<% if alert %>
+			    <p class="errors"><%= alert %></p>
+			<% end %>
+			<div class="container">
+				<div class="ndheight"></div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="sectionsbd contact-f animation" data-animation="animation-fade-in-left">
+							<center><h2>Send Us a Massage</h2></center>
+							 <%=form_for 'contact',:id=>"cform",method: 'post' do |f|%>
+							 	<div class="col-sm-6">
+							 		<div class="col-sm-12 ">
+							 			<%=f.text_field :name,placeholder: "Your Name",required: true%>
+									</div>
+									<div class="col-sm-12 line-break-20">
+										<%=f.email_field :email,placeholder: "Your Email",required: true%>
+									</div>
+ 									<div class="col-sm-12 line-break-20">
+										<%=f.text_field :contact_number,placeholder: "Your Contact Number",required: true%>
+									</div>
+									<div class="col-sm-12 line-break-20">
+										<%=f.select :subject,SUBJECT,placeholder: "Your Subject",required: true%>
+									</div>
+									<div class="col-sm-12 line-break-20">
+										<%=f.text_area :message, :rows=>"5", :placeholder=>"Your Massage"%>
+									</div>
+									<div class="col-sm-12 line-break-20">
+										<%=f.submit :send,id: "submit",:class=>"pull-left submitBnt",required: true%>
+									</div>
+							 	</div>
+							 	<div class="col-sm-6">
+							 		<div class="col-sm-12">
+							 			<div>
+							<div class="contact-us">
+								<div class="title">	
+									<h4>CORPORATES</h4>
+								</div>
+								<div class="body">
+									Would you like us to assist in your search for premium talent? 
+								</div>
+								<div class="button-div">
+									<button type="button" class="btn mdbtn btn-offblack"><i class="fa fa-users"></i>Contact Us</button>	
+								</div>
+							</div>
+							<div class="corporate">
+								<div class="title">	
+									<h4>CANDIDATES</h4>
+								</div>
+								<div class="body">
+									Are you looking for the right career opportunity? Submit your resume
+									<p> 
+										<a href="" style="color:#000;">candidates@skconsultants.in</a>
+									</p>
+									
+								</div>
+								<div class="subtitle">
+									<h4>Beware:</h4>
+									<div>Fraudulent recruitment activity</div>
+								</div>
+							</div>
+					    </div>
+							 	</div>
+							 	</div>	 
+							 <%end%>	
+							
+						</div>
+					</div>
+					
+				</div><!-- .row end-->
+				<div class="ndheight"></div>
+			</div><!-- .container end-->
+		</section>
+		<!-- Contact section End -->
+		 
+		 
+		<!-- GoogleMap Section Start -->
+		<section class="mapArea contactpagemap">
+			<div id="contactMap" class="contact-map">
+				<div id="contactMap" class="contact-map">
+					<%=render partial: 'common/map' %>
+			    </div>
+			</div>
+		</section>
+		<!-- GoogleMap Section End -->
+		<!-- AboutTempleat Section End -->
+		<%=render partial: 'common/footer' %>
+	<script type="text/javascript">
+		$("#contact").attr("class","active")
+		 
+	</script>
+</body>		
+		
+		
+		

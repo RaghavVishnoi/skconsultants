@@ -1,0 +1,61 @@
+<table class="flatTable">
+  <tr class="titleTr">
+    <td class="titleTd"><h3>Candidates</h3>
+</td>
+    <td colspan="5"></td>
+   
+  </tr>
+  <tr class="headingTr">
+    <td>NAME</td>
+    <td>QUALIFICATION</td>
+    <td>JOB TITLE</td>
+    <td>EXPERIENCE</td>
+    <td>APPLIED ON</td>
+    <td>ACTION</td>
+    
+  </tr>
+<%@candidates.each do |candidate|%>  
+  <tr>
+    <td><%=candidate.first_name+" "+candidate.last_name%></td>
+    <td><%=candidate.qualification%></td>
+    <td><%=candidate.job_title%></td>
+    <td><%=candidate.experience%></td>
+    <td><%=candidate.created_at.strftime("%b %d,%Y")%></td>
+     
+    <td class="controlTd">
+      <div class="settingsIcons">
+        <div class="settingsIcon">
+        	<a href=""><img src="/assets/icon/download.png"/></a>
+        </div>
+        <div class="settingsIcon">
+        	<a href=""><img src="/assets/icon/delete.png"/></a>
+        </div>
+        <div class="settingsIcon">
+        	<a href=""><img src="/assets/icon/show.png"/></a>
+        </div>
+      </div>  
+    </td>
+  </tr>
+<%end%>  
+</table>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    
+       
+    
+    
+    
+  
+
+<script type="text/javascript">
+// $(body).click(function(){
+	
+// }) 
+$(".controlTd").click(function () {
+  $(this).children(".settingsIcons").toggleClass("display"); 
+  $(this).children(".closeIcon").toggleClass("openIcon"); 
+});
+	$("#users").attr("class","active")
+</script>

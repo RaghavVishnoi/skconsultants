@@ -1,0 +1,262 @@
+
+    <body id="top" class="ndhome">
+	
+		<!-- PRELOADER-->
+		<%render partial: 'common/loader' %>
+		
+		<!-- END PRELOADER -->
+	
+		<!-- Header Section Start -->
+		<%=render partial: 'common/header'%>
+		
+		<!-- Slider Section Start -->
+		<div class="fullwidthbanner-container nd_rv_slider" style="height:90%;margin-top:4.5%;">
+			<div class="fullwidthbanner">
+				<div class="bannercontainer" >
+					<div class="banner" >
+						<ul>
+							<!-- THE FIRST SLIDE -->
+							<li data-transition="boxfade" data-slotamount="20" >
+							<div class="pattern"></div>
+								<img src="/assets/slider/mp1.jpg" alt="background">
+								
+								
+								
+								
+							</li>
+							<!-- THE SECOND SLIDE -->
+							<li data-transition="boxfade" data-slotamount="20">
+								<div class="pattern"></div>
+								<img src="/assets/slider/sec1.jpg" alt="background">
+			 
+								 
+							</li>
+
+							<li data-transition="boxfade" data-slotamount="20">
+								<div class="pattern"></div>
+								<img src="/assets/slider/sec3.jpg" alt="background">
+			 
+								 
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="tp-bannertimer"></div>
+			</div>
+		</div>
+		<!-- Slider Section End -->
+		  
+		<!-- Nadea Services Section Start -->
+		<section id="ndservices" class="ndservices skype-bg clear animation" data-animation="animation-fade-in-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="ndservice-item">
+							<div class="ndfactsr">
+								<i class="servicewhIcon ndserviceIcon1"></i>
+							</div>
+							<div class="heading">
+								<h2>History</h2>
+								<p>We are providing our services to customer from last 15 years and created our market with our customers globally.</p>
+<!-- 								<button class="home-button">MORE</button>
+ -->							</div>
+						</div>
+					</div>
+					<!-- Services 1 End -->
+					
+					
+					
+					<div class="col-sm-3">
+						<div class="ndservice-item">
+							<div class="ndfactsr">
+								<i class="servicewhIcon ndserviceIcon2"></i>
+							</div>
+							<div class="heading">
+								<h2>Our Values</h2>
+								<p>We offer our clients high quality Security and Housekeeping Services as per the requirements of our clients and as per the International standards and world class quality.</p>
+								<a href="" id="values">
+<!-- 									<button class="home-button">MORE</button>
+ -->							    </a>
+							</div>
+						</div>
+					</div>
+					<!-- Services 4 End -->
+					
+					<div class="col-sm-3">
+						<div class="ndservice-item">
+							<div class="ndfactsr">
+								<i class="servicewhIcon ndserviceIcon3"></i>
+							</div>
+							<div class="heading">
+								<h2>Current Services</h2>
+								<p>Currently we are providing services for all type of manpower and security appliances.</p>
+<!-- 								<a href="/jobs"><button class="home-button">MORE</button></a>
+ -->							</div>
+						</div>
+					</div>
+					<!-- Services 4 End -->
+				</div><!-- end of row -->
+			</div>
+		</section>
+		<!-- Nadea Services Section End-->
+			
+		
+		
+
+		
+		<!-- Latest Post Section Start-->
+		<section id="ndlatestpost" class="clear white-bg">
+			<div class="container">
+				<p class="who">Who</p>
+				<span class="we-are">We Are</span>
+				<div>
+					<div class="about-text">
+						<p>We, New Lion, made our tryst with destiny in 2001..</p>
+						<p>We are one of the trusted Office Security Services providers. We provide specially skilled guards for security of offices. We offer one of the eminent service to our clients i.e. the hand picked office security services. This service is not only unique but is also as per the demand of our clients.</p>
+						<p>This service includes guard training, security, event security management, security guard services, house keeping services and man power staffing. We are successful in fulfilling our client’s specific requirements consistently.</p>
+						
+					</div>
+					<div style="width:40%;height:auto;float:left;">
+						<img src="/assets/hk1.jpg" />
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Latest Post Section Start-->
+		
+		<!-- Testimonial Section Start -->
+		<section id="ndtestimonials" class="clear Offgray-bg animation" data-animation="animation-fade-in-up">	
+			<span class="testimonial-title">
+				<h3>Client Testimonials</h3>				 	
+			</span>
+			
+			<div class="container">
+				<div class="row">
+					 <!-- Reviews Section -->
+					<div class="col-sm-12">
+						<div id="owl-testimonials">
+							<div class="item">
+								
+								<div class="item-right">
+									<h3 class="test-text"> 	
+Client review 1
+									</h3>
+									<p>Client Name</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								 
+								<div class="item-right">
+									<h3 class="test-text">Client Review 2
+
+									</h3>
+									<p>Client 2</p>
+								</div>
+							</div>
+							
+							
+						</div><!-- /#owl-reviews -->  
+					   
+					</div><!-- /.col-lg-12 -->  	    
+					<!-- /#reviews --> 
+				</div>
+			</div>
+		</section>
+		<!-- Testimonial Section End -->
+	
+	
+		<%=render partial: 'common/clients'%>
+		
+		
+		 
+		
+		
+		<div class="go-up"><img src="/assets/back-top.png" alt="Back-To-Top"/></div>
+		<!-- Back To Top End-->
+		
+		<%=render partial: 'common/footer' %>
+		
+		<!-- Jquery lib-->
+		
+		
+		<script type="text/javascript">
+
+			var tpj=jQuery;
+			tpj.noConflict();
+
+			tpj(document).ready(function() {
+
+			if (tpj.fn.cssOriginal!=undefined)
+				tpj.fn.css = tpj.fn.cssOriginal;
+
+				tpj('.banner').revolution(
+					{
+						dottedOverlay:"none",
+						delay:9000,
+						startwidth:1500,
+						startheight:700,
+						hideThumbs:200,
+						
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:5,
+
+						navigationType:"bullet",
+						navigationArrows:"solo",
+						navigationStyle:"preview3",
+
+
+						navigationHAlign:"center",				// Vertical Align top,center,bottom
+						navigationVAlign:"bottom",					// Horizontal Align left,center,right
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+
+						touchenabled:"off",						// Enable Swipe Function : on/off
+						onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
+
+						stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+						stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+						hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+						hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+						hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+						shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+						fullWidth:"on"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+
+
+					});
+
+
+
+				});
+
+		</script>
+		
+		
+		<!--Main Js -->
+		
+		
+      
+    </body>
+
+<script type="text/javascript">
+	jQuery("#home").attr("class","active")
+	jQuery("#values").click(function(){
+			 location.href = "/values"
+	})
+	
+</script>

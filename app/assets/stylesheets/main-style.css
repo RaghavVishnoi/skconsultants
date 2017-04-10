@@ -904,7 +904,7 @@ span.hoverBox .linKed{
 .item-let i{font-size:27px;border:1px solid #6f6f73;border-radius: 50%;padding: 10px;}
 .item-right{width:88%;float:right;}
 
-#contactaddress{margin-left:-.2%;margin-top:.2%;height:200px;background-image: url(/assets/contact.jpg);background-repeat: no-repeat;}
+#contactaddress{margin-left:-.2%;margin-top:.2%;min-height:200px;background-image: url(/assets/contact.jpg);background-repeat: no-repeat;}
 .contact-info{margin-top:8%;}
 .contact-info div{margin-top:1%;}
 .contact-info div p{color:#fff;font-size:14px;}

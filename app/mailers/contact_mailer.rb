@@ -8,7 +8,7 @@ class ContactMailer < ApplicationMailer
 	    @email = contact.email
 	    @contact = contact.contact_number
 	    @message = contact.message
-	    mail(to: 'skconsultants@outlook.com', subject: @subject)
+	    mail(to: 'raghavvishnoi10@gmail.com', subject: @subject)
 	 end
 
 end

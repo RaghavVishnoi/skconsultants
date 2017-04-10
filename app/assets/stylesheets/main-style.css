@@ -183,7 +183,7 @@ h5{
 
 /* --- logo --------------------- */
 
-.logo a{color:#00AAEE;}
+.logo a{color:#666666;}
 .navbar-brand{
   font-size: 26px;
   line-height: 28px;
@@ -300,7 +300,7 @@ header.fixedHeader .mainNav .navTabs li .dropDown .menu{top: 0px;}
 .mainNav .navTabs > li .dropDown li:hover > a,
 .mainNav .navTabs > li .dropDown li:hover > button {
   color: #ffffff;
-  background-color: #00AAEE;
+  background-color: #666666;
 }
 .mainNav .navTabs > li:hover .dropDown {
   display: block;
@@ -321,7 +321,7 @@ header.fixedHeader .mainNav .navTabs li .dropDown .menu{top: 0px;}
 }
 .mainNav .navTabs > li:hover > a,
 .mainNav .navTabs > li:hover > button {
-  color: #00AAEE;
+  color: #666666;
   border-bottom: 2px solid #4cc1d3;
    
 }
@@ -472,7 +472,7 @@ header.fixedHeader .mainNav .navTabs li .dropDown .menu{top: 0px;}
 
 .ndservice-item .heading h2{margin-top:20px;line-height:40px;}
 .ndservice-item .heading p{color:#fff;font-size:15px;line-height:18px;font-weight:normal;}
-#ndservices{padding:80px 0px 76px;background-color: #00AAEE;margin-top:.1%;}
+#ndservices{padding:80px 0px 76px;background-color: #666666;margin-top:.1%;}
 .ndft-line{
 	height:25px;
 	width:2px;
@@ -895,7 +895,7 @@ span.hoverBox .linKed{
 	10. LatestPost Secion End
 ------------------------------------------------------*/
 
-#ndtestimonials{padding:90px 0px 50px;background-color: #00AAEE}
+#ndtestimonials{padding:90px 0px 50px;background-color: #666666}
 #ndtestimonials .owl-controls{display: none!important;}
 .item-right h3{font-size:16px; color:#fff;font-weight:lighter;line-height:24px;}
 .item-right p{font-size:16px; color:#fff;font-family: 'oswaldlight';font-weight:lighter;float: right;}
@@ -1023,7 +1023,7 @@ span.hoverBox .linKed{
 .footer-left{float:right;width: 62.5%;padding-top: 30px;}
 .footer-right{padding-top: 30px;width:73.5%;float:left;background-color: #636a71;padding-left: 20px;}
 .fotter-nopadd{padding:0px;}
-.footer-bg{background-color:#00AAEE;}
+.footer-bg{background-color:#666666;}
 .texth1{
 	font-size:48px;
 	color:#fff;
@@ -1795,7 +1795,7 @@ ul.portfolioContainer3 .col-sm-3{width:100%;}
 /*----------------------------------------------------
 	25. Home9 Page End
 ------------------------------------------------------*/
-#page-title{padding:55px 0px;height:136px;background-color: #00AAEE;margin-top: 10%;}
+#page-title{padding:55px 0px;height:136px;background-color: #666666;margin-top: 10%;}
 .page-title h1{
 	font-family: 'oswaldlight';
 	font-size:30px;
@@ -4063,7 +4063,7 @@ input[type="submit"]:hover > i{
 /************fix IE****************/
 
 .contact-us{
-	width:65%;height:160px;margin-right:5%;background-color:#00AAEE;
+	width:65%;height:160px;margin-right:5%;background-color:#666666;
 }
 .contact-us .title{
 	background-color:#72787F;height:35px;padding-left:18%;padding-top:1%;
@@ -4075,7 +4075,7 @@ input[type="submit"]:hover > i{
 	margin-left:16%;margin-top:5%;
 }
 .corporate{
-	width:65%;height:160px;float:left;margin-top:5%;background-color:#00AAEE;
+	width:65%;height:160px;float:left;margin-top:5%;background-color:#666666;
 }
 .corporate .title{
 	background-color:#72787F;height:35px;padding-left:19%;padding-top:1%;
@@ -4225,6 +4225,6 @@ label > input:focus, label > select:focus {
 .simpleTd{width:50%;padding-left:2%}
 .simpleField{width:75%;height:40px;margin-top:10px;}
 .simpleArea{width:75%;margin-top:10px;}
-.formSubmit{width:20%;height:40px;margin-left:7%;background-color:#00AAEE;margin-bottom:5%;color:#fff;font-family:oswald;font-size:15px;}
-.jobApplyBtn{width:15%;height:40px;margin-left:7%;background-color:#00AAEE;margin-bottom:5%;color:#fff;font-family:oswald;font-size:15px;}
+.formSubmit{width:20%;height:40px;margin-left:7%;background-color:#666666;margin-bottom:5%;color:#fff;font-family:oswald;font-size:15px;}
+.jobApplyBtn{width:15%;height:40px;margin-left:7%;background-color:#666666;margin-bottom:5%;color:#fff;font-family:oswald;font-size:15px;}
 .ddby{margin-left:124px;}

@@ -1,4 +1,7 @@
 /*/* remove codrops styles and reset the whole thing */
+.active{
+	color: #636565 !important;
+}
 #container_demo{
 	 text-align: left;
 	 margin: 0;

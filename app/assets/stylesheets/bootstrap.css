@@ -1111,6 +1111,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+.about-img{height: 235px !important;}
 .img-rounded {
   border-radius: 6px;
 }

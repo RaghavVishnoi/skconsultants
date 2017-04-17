@@ -15,4 +15,15 @@
 
 <%= yield %>
 
+<%if params[:controller] == "home"%>
+	<%= javascript_include_tag( '$("#home").attr("class","active")' ) %>
+<%elsif params[:controller] == "about"%>
+	<%= javascript_include_tag( '$("#about").attr("class","active")' ) %>
+<%elsif params[:controller] == "services"%>
+	<%= javascript_include_tag( '$("#services").attr("class","active")' ) %>
+<%elsif params[:controller] == "contacts"%>
+	<%= javascript_include_tag( '$("#contact").attr("class","active")' ) %>
+<%end%>
+
+
 

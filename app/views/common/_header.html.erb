@@ -16,20 +16,20 @@
 <nav class="mainMenu mainNav pull-right" id="mainNav">
 <ul class="navTabs">
 	<li>
-		<a href="/"  id="home">Home</a>
+		<a href="/"  id="home" class="<%='active' if params[:controller] == "home"%>">Home</a>
 	</li>
 	<li>
-		<a href="/about" id="about">Who we are?</a>
+		<a href="/about" id="about" class="<%='active' if params[:controller] == "about"%>">Who we are?</a>
 	</li>
 	<li>
-		<a href="" id="services">Services</a>
+		<a href="" id="services" class="<%='active' if params[:controller] == "services"%>">Services</a>
 		<ul class="dropDown sub-menu">
-			<li><a href="/">House Keeping</a></li>
-			<li><a href="/" >Security Guard</a></li>	
-			<li><a href="/">Man Power</a></li>		
+			<li><a href="/services/house-keeping">House Keeping</a></li>
+			<li><a href="/services/security-guard" >Security Guard</a></li>	
+			<li><a href="/services/man-power">Man Power</a></li>		
 		</ul><!-- end of dropdown -->
 	</li>
-	<li><a href="/contact" id="contact">Contact</a></li>
+	<li><a href="/contact" id="contact" class="<%='active' if params[:controller] == "contact"%>">Contact</a></li>
 	
 	
 						</ul><!-- end of nav tabs -->

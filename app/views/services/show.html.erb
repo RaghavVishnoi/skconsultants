@@ -1,36 +1,21 @@
 <body id="top" class="ndhome">
 	
-		<!-- PRELOADER-->
 		<%render partial: 'common/loader' %>
 		
-		<!-- END PRELOADER -->
 	
-		<!-- Header Section Start -->
-		<%=render partial: 'common/header'%>
-	<%if params[:id] == 'industrial'%>
-		<%=render partial: 'industrial'%>
-	<%elsif params[:id] == 'corporate'%>	
-		<%=render partial: 'corporate'%>
-	<%elsif params[:id] == 'training'%>
-		<%=render partial: 'training'%>
-	<%elsif params[:id] == 'development'%>
-		<%=render partial: 'development'%>
-	<%elsif params[:id] == 'recruitment'%>
-		<%=render partial: 'recruitment'%>
-	<%elsif params[:id] == 'temporary-staffing'%>
-		<%=render partial: 'temporary_staffing'%>
-	<%elsif params[:id] == 'permanent-staffing'%>
-		<%=render partial: 'permanent_staffing'%>
-	<%elsif params[:id] == 'contract-staffing'%>
-		<%=render partial: 'contract_staffing'%>
-	<%elsif params[:id] == 'executive-research'%>
-		<%=render partial: 'executive_research'%>
-	<%end%>	
+ 		<%=render partial: 'common/header'%>
+
+		<%if params[:id] == 'house-keeping'%>
+			<%=render partial: 'house_keeping'%>
+		<%elsif params[:id] == 'security-guard'%>	
+			<%=render partial: 'security_guard'%>
+		<%elsif params[:id] == 'man-power'%>
+			<%=render partial: 'man_power'%>
+		<%end%>	
 
 </body>	
 <%=render partial: 'common/clients'%>
 <%=render partial: 'common/footer'%>
 <script type="text/javascript">
 	$("#services").attr("class","active")
-	$("#header").attr("style","background-color:#636a71")
 </script>

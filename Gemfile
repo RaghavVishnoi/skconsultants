@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '5.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg','0.18'
 
 # gem 'mysql2'
 # Use SCSS for stylesheets
@@ -24,12 +24,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0'
 
-gem 'clearance', '~> 1.12', '>= 1.12.1'
+gem 'clearance'
+
+gem 'devise'
 
 gem 'carrierwave'
 
 #For serialization
-  gem 'active_model_serializers'
+gem 'active_model_serializers'
 
  gem 'will_paginate' 
 
@@ -41,6 +43,7 @@ gem 'carrierwave'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'rails_admin', '~> 1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

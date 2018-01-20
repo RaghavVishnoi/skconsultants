@@ -1,37 +1,50 @@
-<header class="header headerStyle1" id="header">
-			<div class="ndheader" id="ndheader">
-				<div class="sticky scrollHeaderWrapper" id="header">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="logo pull-left">
-											 
-											 <a class="navbar-brand" href="" id= "hlogo">
-											 <div class="logo">	<img src="/assets/logo.png" class="preload-gif" id="logo">
-													<span style="margin-left:5%;">NEW</span><span class="font-color">LION HOUSE KEEPING</span></div>
-												</a>
-	
-								</div>
+
+<header class="header1 headerStyle1" id="header">
+	<div class="ndheader" id="ndheader">
+		<div class="sticky scrollHeaderWrapper" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="logo pull-left">
+									 
+									<a class="navbar-brand" href="" id="hlogo">
+									 <div class="logo">	<img src="/assets/logo9.png" class="preload-gif" id="logo">
+											<span style="margin-left:5%;">SK</span><span class="font-color">CONSULTANTS.</span></div>
+										</a>
+
+						</div>
 
 <nav class="mainMenu mainNav pull-right" id="mainNav">
 <ul class="navTabs">
-	<li>
-		<a href="/"  id="home" class="<%='active' if params[:controller] == "home"%>">Home</a>
+<li>
+<a href="" id="home">Home</a>
+</li>
+<li>
+<a href="/about" id="about">About Us</a>
+</li>
+<li>
+<a href="" id="services">Services</a>
+<ul class="dropDown sub-menu">
+	<li><a href="" id="recruitment">Recruitment & Placement</a></li>
+	<li><a href="" id="recruitment">Temporary Staffing</a></li>
+	<li><a href="" id="recruitment">Contract Staffing</a></li>
+	<li><a href="" id="recruitment">Permanent Staffing</a></li>
+	<li><a href="" id="development">Executive</a></li>
+	<li><a href="">Training</a>
+		<ul class="dropDown sub-menu menu">
+			<li><a href="" id="industrial">Industrial</a></li>
+			<li><a href="" id="corporate">Corporate</a></li>
+		</ul>
 	</li>
-	<li>
-		<a href="/about" id="about" class="<%='active' if params[:controller] == "about"%>">Who we are?</a>
-	</li>
-	<li>
-		<a href="javascript:void(0)" id="services" class="<%='active' if params[:controller] == "services"%>">Services</a>
-		<ul class="dropDown sub-menu">
-			<li><a href="/services/house-keeping" id="housekeeping">House Keeping</a></li>
-			<li><a href="/services/security-guard" id="securityguard">Security Guard</a></li>	
-			<li><a href="/services/man-power" id="manpower">Man Power</a></li>		
-		</ul><!-- end of dropdown -->
-	</li>
-	<li><a href="/contact" id="contact" class="<%='active' if params[:controller] == "contact"%>">Contact</a></li>
 	
+</ul><!-- end of dropdown -->
+</li>
+<li>
+<a href="" id="career">Career</a>
+<ul class="dropDown sub-menu">
+	<li><a href="" id="apply">Apply Online</a></li>
 	
+<<<<<<< Updated upstream
 						</ul><!-- end of nav tabs -->
 					</nav><!-- end of main nav -->
 		  
@@ -64,4 +77,65 @@
   $("#contact").click(function(){
     location.href = "/services/contact"
   })
+</script>
+</ul><!-- end of dropdown -->
+</li>
+<li>
+<a href="" id="contact">Contact</a>
+</li>
+<li>
+<a href="" id="login-form">Login</a>
+</li>
+
+
+				</ul><!-- end of nav tabs -->
+			</nav><!-- end of main nav -->
+  
+			<a href="" class="generalLink" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
+			<div class="clearfix"></div><!-- end of clearfix -->
+			<div class="responsiveMainNav"></div><!-- end of responsive main nav -->
+					  
+					</div><!-- end fo col 12 -->
+				</div><!-- end of row -->
+			</div><!-- end of container -->
+		</div><!-- end of sticky -->
+	</div><!-- end of ndheader -->
+</header><!-- end of header -->
+
+<script type="text/javascript">
+    $("#hlogo").click(function(){
+			location.href = "/"
+		})
+	$("#home").click(function(){
+			location.href = "/"
+		})
+	$("#about").click(function(){
+			 location.href = "/about"			 
+		})
+	$("#services").click(function(){
+			 location.href = "/services"
+		})
+	$("#recruitment").click(function(){
+			 location.href = "/services/recruitment"
+		})
+	$("#industrial").click(function(){
+			 location.href = "/services/industrial"
+		})
+	$("#corporate").click(function(){
+			 location.href = "/services/corporate"
+		})
+	$("#development").click(function(){
+			 location.href = "/services/development"
+		})
+	$("#contact").click(function(){
+			 location.href = "/contact"
+		})
+	$("#login-form").click(function(){
+			 location.href = "/login"
+		})
+	$("#apply").click(function(){
+			 location.href = "/candidates/new"
+		})
+	 
+		
 </script>

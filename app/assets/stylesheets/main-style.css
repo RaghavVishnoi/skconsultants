@@ -199,11 +199,19 @@ h5{
 	padding-top: 24px;
 }
 #logo{
-	width:50px;height:50px;float:left;margin-top:-3%;margin-left:-5%;
+	width: 68px;
+    height: 75px;
+    float: left;
+    margin-top: -7%;
+    margin-left: -22%;
 }
 
 .header.fixedHeader #logo{
-	width:50px;height:50px;float:left;margin-top:-6%;
+	width: 68px;
+    height: 75px;
+    float: left;
+    margin-top: -10%;
+    margin-left: -22%;
 }
 .header.fixedHeader .mainNav .navTabs li a{padding:17px 22px 23px;}
 .header.fixedHeader .mainNav .navTabs li .dropDown li a{padding:15px;}
@@ -4028,10 +4036,11 @@ input[type="submit"]:hover > i{
 	font-size:250%;color:#000;font-weight:bold;
 }
 .about-text{
-	width:60%;height:auto;float:left;font-weight:bold;margin-top:2%;
+	width:60%;height:auto;float:left;font-weight:bold;margin-top:2%
 }
 .about-text p{
 	margin-top:1%;
+	font-size: 15px;
 }
 .errors{
 	width:80%;

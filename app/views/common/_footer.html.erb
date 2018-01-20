@@ -1,104 +1,91 @@
 <!-- Footer Section Start -->
 		<section class="footer-bg clear animation" data-animation="animation-fade-in-up" id="footer">
-			<div class="rows">
-				<div class="col-sm-5 ndft-no-padding footerbg-left">
-					<div class="footer-left">
-						<div class="col-sm-12 fotter-nopadd">
-							<div class="ft_left">
-								<h1 class="texth1">Say hello</h1>
-								<h3 class="head_ft">we'd love to get response <br/>from you</h3>
-								<div class="ftsocial">
-									<ul class="social_sharenadea">
-										<li><a href="" target="blank"><i class="fa fa-facebook fa-1x"></i></a></li>
-										<li><a href="" target="blank"><i class="fa fa-twitter fa-1x"></i></a></li>
-										<li><a href="#"><i class="fa fa-skype fa-1x"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- 1Col end-->
-					</div><!-- footer left end -->
-				</div><!-- col 5 end -->
-				
-				<div class="col-sm-7 ndft-no-padding footerbg-right">
-					<div class="footer-right">
-						<div class="col-sm-6 fotter-nopadd">
-							<div class="ft_center">
-								<h3 class="fthead">Current Services</h3>
-								<ul class="nadea_recentposts">
-									<li> 
-										
-										<div class="pull-right text">
-											<h5 ><a href="#" title="Lorem Ipsum" style="color:#fff;text-decoration:blink;">House Keeping</a></h5>
-
-
-										</div>
-										<div class="ftmin-height"></div>
-									</li>
-									<li> 
-										
-										<div class="pull-right text">
-											<h5 ><a href="#" title="Lorem Ipsum" style="color:#fff;text-decoration:blink;">Security Guard</a></h5>
-
-
-										</div>
-										<div class="ftmin-height"></div>
-									</li>
-									<li> 
-										
-										<div class="pull-right text">
-											<h5 ><a href="#" title="Lorem Ipsum" style="color:#fff;text-decoration:blink;">Other Man Power</a></h5>
-
-
-										</div>
-										<div class="ftmin-height"></div>
-									</li>
-								</ul>
-							</div><!-- ft center end -->
-						</div><!-- 6Col end-->
-						
-						<div class="col-sm-6 fotter-nopadd2">
-							<div class="nadea_ContInro">
-								<h3 class="fthead">Contact Info</h3>
-								<ul class="address">
-									<li>
-										<div class="pull-left">
-											<div class="ftIcon icon-pin-add">
-												<i class="ndlocationIcon ndftIcon"></i>
-											</div>
-										</div>
-										
-										<p>New Lion House Keeping<br/>Vani Vihar,Raipur Dehradun,Uttarakhand
-										<br />RZO-20,Nanda Block,<br /><label style="margin-left: 16%;font-weight: 100;">Mahveer Enclave,New Delhi</label></p>
-									</li>
-									<li>
-										<div class="pull-left">
-											<div class="ftIcon icon-phone-add">
-												<i class="ndphoneeIcon ndftIcon"></i>
-											</div>
-										</div>
-										<p><b>+(91)-9720490511,+(91)-9897771774</b></p>
-									</li>
-									<li>
-										<div class="pull-left">
-											<div class="ftIcon icon-from">
-												<i class="ndformIcon ndftIcon"></i>
-											</div>
-										</div>
-										<p><a class="mail-box" href="mailto:#"> <b>newlion377@gmail.com</b></a></p>
-									</li>
-								</ul>
-							</div>
-						</div><!-- 6Col end-->
-					</div><!-- .test row end -->
-				</div><!-- col 7 end -->
-			</div><!-- rows end -->
+	<div class="rows">
+		<div class="col-sm-5 ndft-no-padding footerbg-left">
+			<div class="footer-left">
+				<div class="col-sm-12 fotter-nopadd">
+					<div class="ft_left">
+						<h1 class="texth1">Say hello</h1>
+						<h3 class="head_ft">we'd love to get response <br/>from you</h3>
+						<div class="ftsocial">
+							<ul class="social_sharenadea">
+								<li><a href="https://www.facebook.com/webRedox" target="blank"><i class="fa fa-facebook fa-1x"></i></a></li>
+								<li><a href="https://twitter.com/webredox" target="blank"><i class="fa fa-twitter fa-1x"></i></a></li>
+								<li><a href="#"><i class="fa fa-skype fa-1x"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- 1Col end-->
+			</div><!-- footer left end -->
+		</div><!-- col 5 end -->
 		
-			<!-- Footer Bottom Start-->
-			<div class="footer-bottom clear">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8">
-					<p class="copywrite pull-left">&copy; 2017 New Lion House Keeping<span class="font-color"></p>
+		<div class="col-sm-7 ndft-no-padding footerbg-right">
+			<div class="footer-right">
+				<div class="col-sm-6 fotter-nopadd">
+					<div class="ft_center">
+						<h3 class="fthead">Current Openings</h3>
+						<ul class="nadea_recentposts">
+							<%@current_openings.each_with_index do |current_opening,index|%>
+								<%if index < 3%>
+									<li> <!-- 1 -->
+										<div class="pull-right text">
+											<h5 class="ftblog_head"><a href="#" title="Lorem Ipsum"><%=current_opening.name%></a></h5>
+											<p class="date-time">exp <%=current_opening.exp_required%></p>
+										</div>
+										<div class="ftmin-height"></div>
+									</li>
+								<%elsif index == 3%>
+									<a href="">more</a>
+								<%end%>	
+							<%end%>	
+						</ul>
+					</div><!-- ft center end -->
+				</div><!-- 6Col end-->
+				
+				<div class="col-sm-6 fotter-nopadd2">
+					<div class="nadea_ContInro">
+						<h3 class="fthead">Contact Info</h3>
+						<ul class="address">
+							<li>
+								<div class="pull-left">
+									<div class="ftIcon icon-pin-add">
+										<i class="ndlocationIcon ndftIcon"></i>
+									</div>
+								</div>
+								
+								<p>SK Consultants<br/>50B 3rd floor,Bharat Nager,New Friends Colony,New Delhi</p>
+							</li>
+							<li>
+								<div class="pull-left">
+									<div class="ftIcon icon-phone-add">
+										<i class="ndphoneeIcon ndftIcon"></i>
+									</div>
+								</div>
+								<p>+(91)-9711063143</p>
+							</li>
+							<li>
+								<div class="pull-left">
+									<div class="ftIcon icon-from">
+										<i class="ndformIcon ndftIcon"></i>
+									</div>
+								</div>
+								<p><a class="mail-box" href="mailto:#"> corporate.skc@gmail.com<br>skconsultants@outlook.com</a></p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- 6Col end-->
+			</div><!-- .test row end -->
+		</div><!-- col 7 end -->
+	</div><!-- rows end -->
+
+
+	<!-- Footer Bottom Start-->
+	<div class="footer-bottom clear">
+		<div class="container">
+			<div class="row">
+				 
+				<div class="col-sm-8">
+					<p class="copywrite pull-left">&copy; 2016 SK Consultants<span class="font-color"></p>
 				</div><!-- col 6 end -->
 				<div class="col-sm-4">
 					<p class="copywrite pull-right">Design & Developed By: <label>Raghav Pratap Singh</label><label class="ddby">raghavvishnoi10@gmail.com</label>
@@ -106,10 +93,12 @@
 					 
 
 				</div><!-- col 6 end -->
-					</div><!-- row end -->
-				</div><!-- container end -->
-			</div><!-- Footer Bottom End -->
-		</section><!-- footer section end  -->
+			</div><!-- row end -->
+		</div><!-- container end -->
+	</div><!-- Footer Bottom End -->
+</section><!-- footer section end  -->
+
+
 <script>
 	 $('.blink_me').fadeOut(500).fadeIn(500, blink);
 </script>		

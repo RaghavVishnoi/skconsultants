@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root "home#index"
 
+  devise_for :users
   resources :services, only: [:index,:show]
   resources :about, only: [:index]
   resources :contact, only: [:index,:create]
@@ -15,6 +16,14 @@ Rails.application.routes.draw do
   get '/login', to: "session#new"
   post '/users/sign_in', to: 'session#create'
   get 'users/sign_out', to: 'session#destroy'
+
+  devise_for :admins, controllers: {sessions: "admin/sessions"}
+
+  devise_scope :admin do
+      delete '/admins/sign_out' => 'admin/sessions#destroy'
+  end
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
  

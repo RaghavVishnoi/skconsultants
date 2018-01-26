@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
-  
+
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
@@ -78,14 +78,14 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_controller.default_url_options = { host: 'https://newlion.herokuapp.com' }
+  config.action_controller.default_url_options = { host: 'http://skconsultants.in/' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
-    port:                 587,
-    user_name:            'raghavvishnoi10@gmail.com',
-    password:             'xyz',
+    port:                 25,
+    user_name:            ENV['EMAIL'],
+    password:             ENV['EMAIL_PASSWORD'],
     authentication:       'plain',
     enable_starttls_auto: true  }
 

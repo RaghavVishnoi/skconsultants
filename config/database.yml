@@ -29,4 +29,5 @@ test:
   database: sk_consultants_test
 
 production:
-  database: ruby
+  <<: *default
+  database: db/production.sqlite3

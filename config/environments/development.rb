@@ -42,9 +42,9 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    user_name:            'raghavvishnoi10@gmail.com',
+    address:              'mail.skconsultants.in',
+    port:                 465,
+    user_name:            'configure@skconsultants.in',
     password:             'xyz',
     authentication:       'plain',
     enable_starttls_auto: true  }

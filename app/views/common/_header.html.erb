@@ -25,9 +25,9 @@
 <a href="" id="services">Services</a>
 <ul class="dropDown sub-menu">
 	<li><a href="" id="recruitment">Recruitment & Placement</a></li>
-	<li><a href="" id="recruitment">Temporary Staffing</a></li>
-	<li><a href="" id="recruitment">Contract Staffing</a></li>
-	<li><a href="" id="recruitment">Permanent Staffing</a></li>
+	<li><a href="" id="ts">Temporary Staffing</a></li>
+	<li><a href="" id="cs">Contract Staffing</a></li>
+	<li><a href="" id="ps">Permanent Staffing</a></li>
 	<li><a href="" id="development">Executive</a></li>
 	<li><a href="">Training</a>
 		<ul class="dropDown sub-menu menu">
@@ -79,6 +79,15 @@ $("#about").click(function(){
 })
 $("#services").click(function(){
 	 location.href = "/services"
+})
+$("#ts").click(function(){
+	location.href = "/services/temporary-staffing"
+})
+$("#ps").click(function(){
+	location.href = "/services/permanent-staffing"
+})
+$("#cs").click(function(){
+	location.href = "/services/contract-staffing"
 })
 $("#recruitment").click(function(){
 	 location.href = "/services/recruitment"

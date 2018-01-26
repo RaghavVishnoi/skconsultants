@@ -121,5 +121,4 @@ ActiveRecord::Schema.define(version: 20180120102232) do
     t.index ["remember_token"], name: "index_users_on_remember_token", using: :btree
   end
 
->>>>>>> Stashed changes
 end

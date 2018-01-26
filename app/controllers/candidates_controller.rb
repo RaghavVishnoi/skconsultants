@@ -2,7 +2,8 @@ class CandidatesController < ApplicationController
 
   before_action :set_candidate, only: [:show, :edit, :update, :destroy]
  
-  layout 'candidate'
+  layout 'candidate', only: [:new]
+  layout 'admin', only: [:index,:show]
 
   def index
     @candidates = Candidate.all.order('created_at desc')

@@ -543,3 +543,20 @@ tr:nth-child(3) .settingsIcon img{
 	margin-left:10%;
 
 }
+
+.form-field-height{height: 100px;border: 1px solid #ccc;}
+
+.current_opening_details{width:950px;margin: auto;}
+.current_opening_details tbody th{
+	width: 25%;
+    height: 50px;
+    padding: 23px;
+    font-size: 15px;
+}
+
+.current_opening_details tbody td{
+	width: 25%;
+    height: 50px;
+    padding: 23px;
+    font-size: 15px;
+}

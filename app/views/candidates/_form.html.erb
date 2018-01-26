@@ -1,0 +1,100 @@
+
+   
+ <center> <h1 class="candidate-title">Apply Here</h1> </center>
+  
+ <%= form_for @candidate, :html => {:class => 'candidate-form'} do |f| %>
+  <% if @candidate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@candidate.errors.count, "error") %> prohibited this candidate from being saved:</h2>
+
+      <ul>
+      <% @candidate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="col-3" id="border-left border-top">
+    <label>
+      First Name
+      <%=f.text_field :first_name,placeholder: "What is your first name?"%>
+      
+    </label>
+  </div>
+  <div class="col-3" id="border">
+    <label>
+      Last Name
+      <%=f.text_field :last_name,placeholder: "What is last name?"%>
+    </label>
+  </div>
+  <div class="col-3" id="border">
+    <label>
+      Email
+      <%=f.email_field :email,placeholder: "What is email address?"%>
+    </label>
+  </div>
+  
+  <div class="col-3" id="border">
+    <label>
+      Phone Number
+      <%=f.phone_field :contact_number,placeholder: "How can we get you?"%>
+    </label>
+  </div>
+  <div class="col-3" id="border">
+    <label>
+      State
+      <%=f.select :state,STATES,{prompt: 'Select State'}%>
+    </label>
+  </div>
+  <div class="col-3" id="border">
+    <label>
+      City
+      <%=f.text_field :city,placeholder: "City you are from?"%>
+    </label>
+  </div>
+  
+  <div class="col-4" id="border">
+    <label>
+      Street/Village/Town
+      <%=f.text_field :street,placeholder: "where are you from?"%>
+    </label>
+  </div>
+  <div class="col-4" id="border">
+    <label>
+      Qualification
+      <%=f.select :qualification,QUALIFICATION,{prompt: 'Select qualification'}%>
+    </label>
+  </div>
+  <div class="col-4" id="border">
+    <label>
+      Total experience
+      <%=f.select :experience,EXPERIENCE,{prompt: 'Select you total experience'}%>
+    </label>
+  </div>
+  <div class="col-4" id="border">
+    <label>
+      Applying for
+      <%=f.text_field :job_title,placeholder: "Enter job title"%>
+    </label>
+  </div>
+  <div class="col-4" id="border">
+    <label>Upload your resume</label>
+       <label class="file-field">
+        <%=f.file_field :document%>
+      </label>
+   </div>
+   <div class="col-submit">
+    <%=f.submit "Submit",:style=>"width:200px;height:50px;background-color:#00AAEE;color:#fff;font-size:25px;"%> 
+   </div> 
+<% end %>
+
+  
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+
+  

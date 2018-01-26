@@ -27,15 +27,20 @@
 						<ul class="nadea_recentposts">
 							<%@current_openings.each_with_index do |current_opening,index|%>
 								<%if index < 3%>
-									<li> <!-- 1 -->
+									<li>
 										<div class="pull-right text">
-											<h5 class="ftblog_head"><a href="#" title="Lorem Ipsum"><%=current_opening.name%></a></h5>
+											<h5 class="ftblog_head"><label style="color: #fff;cursor: pointer;" onclick="showCurrentOpening('<%=current_opening.id%>')"><%=current_opening.name%></label></h5>
 											<p class="date-time">exp <%=current_opening.exp_required%></p>
 										</div>
 										<div class="ftmin-height"></div>
 									</li>
 								<%elsif index == 3%>
-									<a href="">more</a>
+									<li>
+										<div class="pull-right text">
+											<h5 class="ftblog_head"><label style="color: #fff;cursor: pointer;"><label style="cursor: pointer;" onclick="listCurrentOpenings()">more..</label></label></h5>
+										</div>
+										<div class="ftmin-height"></div>
+									</li>
 								<%end%>	
 							<%end%>	
 						</ul>
@@ -101,4 +106,10 @@
 
 <script>
 	 $('.blink_me').fadeOut(500).fadeIn(500, blink);
+	 function showCurrentOpening(currentOpeningId){
+	 	location.href = '/current_openings/'+currentOpeningId+'/candidate'
+	 }
+	 function listCurrentOpenings(){
+	 	location.href = '/candidate_opening_list'
+	 }
 </script>		

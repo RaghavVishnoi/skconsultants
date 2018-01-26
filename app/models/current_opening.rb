@@ -9,20 +9,20 @@ class CurrentOpening < ActiveRecord::Base
 	validates :to, presence: true
 	validates :status, presence: true
 	validates :job_description,presence: true
-  	validate :functional_area 
-  	validates :annual_salary_offered,presence: true
-  	validates :job_location,presence: true
-  	validate  :candidate_industry
-  	validate  :current_location
-  	validate  :current_annual_salary
-  	validate  :minimum_exp
-  	validate  :maximum_exp
-  	validate  :qualification1
-  	validate  :highest_qualification
-  	validates :company_name,presence: true
-  	validates :company_display_name,presence: true
-  	validate :company_description
-  	validates :candidate_skills, presence: true
+	validate :functional_area 
+	validates :annual_salary_offered,presence: true
+	validates :job_location,presence: true
+	validate  :candidate_industry
+	validate  :current_location
+	validate  :current_annual_salary
+	validate  :minimum_exp
+	validate  :maximum_exp
+	validate  :qualification1
+	validate  :highest_qualification
+	validates :company_name,presence: true
+	validates :company_display_name,presence: true
+	validate  :company_description
+	validate  :candidate_skills
 
 	private
 		def default_values

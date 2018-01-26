@@ -1,0 +1,42 @@
+ <center> <h1 class="candidate-title"><u><%=@current_opening.name%></u></h1> </center>
+ <br>
+ <table class="table table-bordered current_opening_details">
+  <tbody>
+    <tr>
+      <th style="width: 25%;">Exp Required</th>
+      <td style="width: 25%;"><%=@current_opening.exp_required%></td>
+      <th style="width: 25%;">Number of openings</th>
+      <td style="width: 25%;"><%=@current_opening.count_openings%></td>
+    </tr>
+    <tr>
+      <th>Valid From</th>
+      <td><%=@current_opening.from%></td>
+      <th>Valid To</th>
+      <td><%=@current_opening.to%></td>
+    </tr>
+    <tr>
+      <th>Company Name</th>
+      <td><%=@current_opening.company_name%></td>
+      <th>Company Description</th>
+      <td><%=@current_opening.company_description%></td>
+    </tr>
+    <tr>
+      <th>Employer Industry</th>
+      <td><%=@current_opening.employer_industry%></td>
+      <th>Job Description</th>
+      <td><%=@current_opening.job_description%></td>
+    </tr>
+    <tr>
+      <th>Job Location</th>
+      <td><%=@current_opening.job_location%></td>
+      <th>Minimum Experience</th>
+      <td><%=@current_opening.minimum_exp%></td>
+    </tr>
+    <tr>
+      <th>Maximum Experience</th>
+      <td><%=@current_opening.maximum_exp%></td>
+      <th>Highest Qualification</th>
+      <td><%=@current_opening.highest_qualification%></td>
+    </tr>
+  </tbody>
+</table>    

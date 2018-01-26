@@ -1,0 +1,13 @@
+<%= render 'list' %>
+<br>
+<div class="col-sm-12">
+	<div class="col-sm-4 col-sm-offset-4">
+		<%=submit_tag "Go To Home",class: "btn btn-info",id: "back_to_home"%> 
+	</div>
+</div>
+<script type="text/javascript">
+	$("#home").attr("class","active")
+	$("#back_to_home").click(function(){
+		location.href = '/'
+	})
+</script>

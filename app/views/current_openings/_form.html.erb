@@ -1,0 +1,136 @@
+   
+ <center> <h1 class="candidate-title">Post a job</h1> </center>
+  
+ <%= form_for @current_opening, :html => {:class => 'candidate-form'} do |f| %>
+  <% if @current_opening.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@current_opening.errors.count, "error") %> prohibited this candidate from being saved:</h2>
+
+      <ul>
+      <% @current_opening.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="col-sm-4 form-field-height" id="border-left border-top">
+    <label>
+      Job Title
+      <%=f.text_field :name,placeholder: "Job Title"%>
+      
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Exp Required
+      <%=f.text_field :exp_required,placeholder: "Exp Required"%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      From
+      <%=f.date_field :from,placeholder: "From",class: 'datetimepicker',value: "#{@current_opening.from}"%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      To
+      <%=f.date_field :to,placeholder: "To",value: "#{@current_opening.from}"%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Status
+      <%=f.select(:status,STATUS,{prompt: 'Select status'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      No of openings
+      <%=f.select(:count_openings,COUNT_OPENINGS,{prompt: 'Select openings count'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Employer Industry
+      <%=f.select(:employer_industry,INDUSTRY,{prompt: 'Select industry'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Job Description
+      <%=f.text_field :job_description,placeholder: 'Job Description'%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Functional Area
+      <%=f.select(:functional_area,FUNCTIONAL_AREA,{prompt: 'Select functional area'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Annual Salary Offered
+      <%=f.text_field :annual_salary_offered,placeholder: 'Annual Package'%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Job Location
+      <%=f.select(:job_location,STATES,{prompt: 'Select job location'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Minimum Experience
+      <%=f.select(:minimum_exp,EXP,{prompt: 'Select minimum exp'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Maximum Experiience
+      <%=f.select(:maximum_exp,EXP,{prompt: 'Select maximum exp'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+       Qualification
+      <%=f.select(:highest_qualification,QUALIFICATION_LEVEL,{prompt: 'Select qualification'})%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Company Name
+      <%=f.text_field :company_name,required: true,placeholder: 'Company Name'%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Company Display Name
+      <%=f.text_field :company_display_name,required: true,placeholder: 'Company Display Name'%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height" id="border">
+    <label>
+      Company Description
+      <%=f.text_field :company_description,required: true,placeholder: 'Company Descripion'%>
+    </label>
+  </div>
+  <div class="col-sm-4 form-field-height">
+
+  </div>
+  <div class="col-sm-4" style="margin-top: 10px;">
+    <%=f.submit "Submit",class: "btn btn-success"%> 
+  </div>
+<% end %>
+
+  
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+
+  

@@ -1,0 +1,44 @@
+<table class="flatTable">
+  <tr class="titleTr">
+    <td class="titleTd"><h3>CURRENT OPENINGS</h3>
+</td>
+    <td colspan="5"></td>
+   
+  </tr>
+  <tr class="headingTr">
+    <td>JOB TITLE</td>
+    <td>EXP REQUIRED</td>
+    <td>FROM</td>
+    <td>TO</td>
+    <td>TOTAL OPENINGS</td>
+    <td>ACTION</td>  
+  </tr>
+	<%@current_openings.each do |current_opening|%>
+	  <tr>
+	  	<td><%=current_opening.name%></td>
+	  	<td><%=current_opening.exp_required%></td>
+	  	<td><%=current_opening.from%></td>
+	  	<td><%=current_opening.to%></td>
+	  	<td><%=current_opening.count_openings%></td>
+	  	<td>
+	  	  <%if current_user.present? && current_user.user_roles.present? && current_user.user_roles.map{|user_role| user_role.role.name}.include?('Superadmin')%>	
+		      <a href='/current_openings/<%=String(current_opening.id)%>/edit'>
+		        <i class="fa fa-pencil" aria-hidden="true"></i>
+		      </a>&nbsp;&nbsp;&nbsp;
+		      <%= link_to current_opening, method: :delete, data: { confirm: 'Are you sure?' } do%>
+	          	<i class="fa fa-trash" aria-hidden="true"></i>
+	          <%end%>&nbsp;&nbsp;&nbsp;
+	          <a href='/current_openings/<%=String(current_opening.id)%>'>
+		        <i class="fa fa-info-circle" aria-hidden="true"></i>
+		      </a>   
+		  <%else%>
+		    <a href='/current_openings/<%=String(current_opening.id)%>/candidate'>
+		        <i class="fa fa-info-circle" aria-hidden="true"></i>
+		    </a>     
+	      <%end%>
+	      
+	    </td>
+	  </tr>
+	<%end%>
+</table>
+<%= will_paginate @current_openings %>

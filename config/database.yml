@@ -29,8 +29,4 @@ test:
   database: sk_consultants_test
 
 production:
-  host: 127.9.98.2
-  adapter: mysql2
   database: ruby
-  username: adminEDRB148
-  password: nD27hvdRi2lH
